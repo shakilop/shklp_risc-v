@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Sep 29 13:00:08 2021
+# Process ID: 1312
+# Current directory: D:/tmp/Ivanychev_IVT_32_APS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent632 D:\tmp\Ivanychev_IVT_32_APS\Ivanychev_IVT_32_APS.xpr
+# Log file: D:/tmp/Ivanychev_IVT_32_APS/vivado.log
+# Journal file: D:/tmp/Ivanychev_IVT_32_APS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 29 13:00:24 2021...

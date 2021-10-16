@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Sep 30 10:09:29 2021
+# Process ID: 1704
+# Current directory: D:/tmp/Ivanychev_IVT_32_APS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1308 D:\tmp\Ivanychev_IVT_32_APS\Ivanychev_IVT_32_APS.xpr
+# Log file: D:/tmp/Ivanychev_IVT_32_APS/vivado.log
+# Journal file: D:/tmp/Ivanychev_IVT_32_APS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+close [ open D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v w ]
+add_files D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v
+update_compile_order -fileset sim_1
+close [ open D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v w ]
+add_files D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 30 11:28:20 2021...

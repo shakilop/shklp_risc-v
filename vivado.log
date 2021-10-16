@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct  3 15:19:21 2021
+# Process ID: 11576
+# Current directory: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9752 F:\Семестр 5\АПС\Ivanychev_IVT_32_APS\Ivanychev_IVT_32_APS.xpr
+# Log file: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/vivado.log
+# Journal file: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/tmp/Ivanychev_IVT_32_APS' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Ivanychev_IVT_32_APS.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 786.688 ; gain = 203.273
+update_compile_order -fileset sources_1
+close [ open {F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v} w ]
+add_files {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/DE1_pin_assignments.csv}}
+export_ip_user_files -of_objects  [get_files {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/DE1_pin_assignments.csv}}] -no_script -reset -force -quiet
+remove_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/DE1_pin_assignments.csv}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Oct  3 16:06:25 2021] Launched synth_1...
+Run output will be captured here: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Oct  3 16:08:54 2021] Launched synth_1...
+Run output will be captured here: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Oct  3 16:11:49 2021] Launched synth_1...
+Run output will be captured here: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/runme.log
+set_property is_enabled false [get_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v}}]
+set_property is_enabled false [get_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v}}]
+set_property is_enabled false [get_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v}}]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Oct  3 16:16:18 2021] Launched synth_1...
+Run output will be captured here: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/runme.log
+create_project project_1 {F:/ 5/miriscv_v2/project_1} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1001.730 ; gain = 0.000
+add_files -norecurse {{F:/Семестр 5/АПС/miriscv_v2/miriscv_register_file.v} {F:/Семестр 5/АПС/miriscv_v2/miriscv.v} {F:/Семестр 5/АПС/miriscv_v2/miriscv_instruction_memory.v} {F:/Семестр 5/АПС/miriscv_v2/miriscv_alu.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Sun Oct  3 16:24:51 2021] Launched synth_1...
+Run output will be captured here: F:/ 5/miriscv_v2/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Oct  3 16:25:46 2021] Launched impl_1...
+Run output will be captured here: F:/ 5/miriscv_v2/project_1/project_1.runs/impl_1/runme.log
+file mkdir F:/ 5/miriscv_v2/project_1/project_1.srcs/constrs_1
+create_bd_design "design_1"
+Wrote  : <F:\ 5\miriscv_v2\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{F:/ 5/miriscv_v2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -reset -force -quiet
+remove_files  {{F:/ 5/miriscv_v2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: miriscv
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1512.004 ; gain = 169.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'miriscv' [F:/Семестр 5/АПС/miriscv_v2/miriscv.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'miriscv' (1#1) [F:/Семестр 5/АПС/miriscv_v2/miriscv.v:1]
+WARNING: [Synth 8-3330] design miriscv has an empty top module

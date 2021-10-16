@@ -1,0 +1,699 @@
+
+*** Running vivado
+    with args -log miriscv.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source miriscv.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source miriscv.tcl -notrace
+Command: synth_design -top miriscv -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12520 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 808.910 ; gain = 177.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'miriscv' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'miriscv_instruction_memory' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v:1]
+INFO: [Synth 8-3876] $readmem data file 'F:/Ivanychev_IVT_32_APS/program.txt' is read successfully [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'miriscv_instruction_memory' (1#1) [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'miriscv_register_file' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'miriscv_register_file' (2#1) [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v:1]
+INFO: [Synth 8-6157] synthesizing module 'miriscv_alu' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v:32]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'miriscv_alu' (3#1) [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v:32]
+WARNING: [Synth 8-6014] Unused sequential element PC_add_reg was removed.  [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v:60]
+WARNING: [Synth 8-3848] Net btnc_i in module/entity miriscv does not have driver. [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'miriscv' (4#1) [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v:1]
+WARNING: [Synth 8-3331] design miriscv_instruction_memory has unconnected port clk
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 872.000 ; gain = 240.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 872.000 ; gain = 240.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 872.000 ; gain = 240.906
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb1_blue_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb1_green_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb1_red_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb2_blue_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb2_green_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb2_red_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[0]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[1]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[2]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[3]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[4]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[5]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[6]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[7]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[0]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[1]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[2]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[3]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[4]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[5]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[6]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[7]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rstn_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnc_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnu_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnl_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnr_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnd_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_red_o[0]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_red_o[1]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_red_o[2]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_red_o[3]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_green_o[0]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_green_o[1]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_green_o[2]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_green_o[3]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_blue_o[0]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_blue_o[1]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_blue_o[2]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_blue_o[3]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_hs_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_vs_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'miso'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mosi'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ss'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmp_scl'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmp_sda'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pdm_clk_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pdm_data_i'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pdm_lrsel_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_audio_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_sdaudio_o'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ps2_clk'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ps2_data'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched 'Inst_Audio/DDR/rstn_reg/C'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:258]
+WARNING: [Vivado 12-508] No pins matched 'Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r*/PRE'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:258]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins Inst_Audio/DDR/rstn_reg/C]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:258]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[*]/D} -hier'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:261]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-through [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[*]/D} -hier]'. [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc:261]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/miriscv_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/miriscv_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 999.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "RAM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'result_o_reg' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'comparison_result_o_reg' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 31    
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	  15 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module miriscv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module miriscv_instruction_memory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+Module miriscv_register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 31    
+Module miriscv_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  15 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design miriscv has unconnected port clk_i
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design miriscv has unconnected port sw_i[1]
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[30][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[29][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[28][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[27][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[26][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[25][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[24][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[23][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[22][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[21][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[20][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[19][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[18][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[17][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[16][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[15][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[6][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[5][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[4][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[3][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[0][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[2][0]' (FDRE) to 'register_file_inst/register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[1][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[14][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[13][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[12][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[11][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[10][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[9][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[8][0]' (FDRE) to 'register_file_inst/register_reg[7][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\register_file_inst/register_reg[7][0] )
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[30][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[29][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[28][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[27][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[26][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[25][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[24][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[23][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[22][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[21][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[20][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[19][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[18][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[17][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[16][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[15][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[6][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[5][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[4][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[3][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[0][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[2][1]' (FDRE) to 'register_file_inst/register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[1][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[14][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[13][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[12][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[11][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[10][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[9][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[8][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[7][1]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[30][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[29][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[28][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[27][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[26][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[25][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[24][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[23][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[22][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[21][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[20][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[19][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[18][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[17][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[16][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[15][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[6][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[5][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[4][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[3][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[0][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[2][2]' (FDRE) to 'register_file_inst/register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[1][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[14][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[13][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[12][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[11][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[10][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[9][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[8][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[7][2]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[30][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[29][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[28][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[27][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[26][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[25][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[24][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'register_file_inst/register_reg[23][3]' (FDRE) to 'register_file_inst/register_reg[1][3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\register_file_inst/register_reg[7][31] )
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[31]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[30]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[29]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[28]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[27]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[26]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[25]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[24]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[23]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[22]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[21]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[20]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[19]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[18]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[17]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[16]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[15]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[14]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[13]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[12]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[11]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[10]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[9]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[8]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[7]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[6]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[5]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[4]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[3]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[2]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[1]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/result_o_reg[0]) is unused and will be removed from module miriscv.
+WARNING: [Synth 8-3332] Sequential element (alu_inst/comparison_result_o_reg) is unused and will be removed from module miriscv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    32|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    32|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 999.137 ; gain = 368.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 999.137 ; gain = 240.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 999.137 ; gain = 368.043
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 143 Warnings, 73 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1004.316 ; gain = 650.758
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.316 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/miriscv.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file miriscv_utilization_synth.rpt -pb miriscv_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  4 11:54:07 2021...

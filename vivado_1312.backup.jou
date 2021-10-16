@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Sep 29 13:00:08 2021
+# Process ID: 1312
+# Current directory: D:/tmp/Ivanychev_IVT_32_APS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent632 D:\tmp\Ivanychev_IVT_32_APS\Ivanychev_IVT_32_APS.xpr
+# Log file: D:/tmp/Ivanychev_IVT_32_APS/vivado.log
+# Journal file: D:/tmp/Ivanychev_IVT_32_APS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr

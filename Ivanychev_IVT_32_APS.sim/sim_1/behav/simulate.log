@@ -1,0 +1,227 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Add Test's
+Test    0 PASS in testbench.alu_oper_test
+Time = 10
+Test    1 PASS in testbench.alu_oper_test
+Time = 20
+Test    2 PASS in testbench.alu_oper_test
+Time = 30
+Test    3 PASS in testbench.alu_oper_test
+Time = 40
+Test    4 PASS in testbench.alu_oper_test
+Time = 50
+Test    5 PASS in testbench.alu_oper_test
+Time = 60
+Test    6 PASS in testbench.alu_oper_test
+Time = 70
+Test    7 PASS in testbench.alu_oper_test
+Time = 80
+
+Sub Test's
+Test    8 PASS in testbench.alu_oper_test
+Time = 90
+Test    9 PASS in testbench.alu_oper_test
+Time = 100
+Test   10 PASS in testbench.alu_oper_test
+Time = 110
+Test   11 PASS in testbench.alu_oper_test
+Time = 120
+Test   12 PASS in testbench.alu_oper_test
+Time = 130
+Test   13 PASS in testbench.alu_oper_test
+Time = 140
+Test   14 PASS in testbench.alu_oper_test
+Time = 150
+Test   15 PASS in testbench.alu_oper_test
+Time = 160
+
+Xor Test's
+Test   16 PASS in testbench.alu_oper_test
+Time = 170
+Test   17 PASS in testbench.alu_oper_test
+Time = 180
+Test   18 PASS in testbench.alu_oper_test
+Time = 190
+Test   19 PASS in testbench.alu_oper_test
+Time = 200
+Test   20 PASS in testbench.alu_oper_test
+Time = 210
+Test   21 PASS in testbench.alu_oper_test
+Time = 220
+Test   22 PASS in testbench.alu_oper_test
+Time = 230
+Test   23 PASS in testbench.alu_oper_test
+Time = 240
+
+Or Test's
+Test   24 PASS in testbench.alu_oper_test
+Time = 250
+Test   25 PASS in testbench.alu_oper_test
+Time = 260
+Test   26 PASS in testbench.alu_oper_test
+Time = 270
+Test   27 PASS in testbench.alu_oper_test
+Time = 280
+Test   28 PASS in testbench.alu_oper_test
+Time = 290
+Test   29 PASS in testbench.alu_oper_test
+Time = 300
+Test   30 PASS in testbench.alu_oper_test
+Time = 310
+Test   31 PASS in testbench.alu_oper_test
+Time = 320
+
+And Test's
+Test   32 PASS in testbench.alu_oper_test
+Time = 330
+Test   33 PASS in testbench.alu_oper_test
+Time = 340
+Test   34 PASS in testbench.alu_oper_test
+Time = 350
+Test   35 PASS in testbench.alu_oper_test
+Time = 360
+Test   36 PASS in testbench.alu_oper_test
+Time = 370
+Test   37 PASS in testbench.alu_oper_test
+Time = 380
+Test   38 PASS in testbench.alu_oper_test
+Time = 390
+Test   39 PASS in testbench.alu_oper_test
+Time = 400
+
+SRA Test's
+Test   40 PASS in testbench.alu_oper_test
+Time = 410
+Test   41 PASS in testbench.alu_oper_test
+Time = 420
+Test   42 PASS in testbench.alu_oper_test
+Time = 430
+Test   43 PASS in testbench.alu_oper_test
+Time = 440
+Test   44 PASS in testbench.alu_oper_test
+Time = 450
+Test   45 PASS in testbench.alu_oper_test
+Time = 460
+Test   46 PASS in testbench.alu_oper_test
+Time = 470
+Test   47 PASS in testbench.alu_oper_test
+Time = 480
+
+SRL Test's
+Test   48 PASS in testbench.alu_oper_test
+Time = 490
+Test   49 PASS in testbench.alu_oper_test
+Time = 500
+Test   50 PASS in testbench.alu_oper_test
+Time = 510
+Test   51 PASS in testbench.alu_oper_test
+Time = 520
+Test   52 PASS in testbench.alu_oper_test
+Time = 530
+Test   53 PASS in testbench.alu_oper_test
+Time = 540
+Test   54 PASS in testbench.alu_oper_test
+Time = 550
+Test   55 PASS in testbench.alu_oper_test
+Time = 560
+
+SLL Test's
+Test   56 PASS in testbench.alu_oper_test
+Time = 570
+Test   57 PASS in testbench.alu_oper_test
+Time = 580
+Test   58 PASS in testbench.alu_oper_test
+Time = 590
+Test   59 PASS in testbench.alu_oper_test
+Time = 600
+Test   60 PASS in testbench.alu_oper_test
+Time = 610
+Test   61 PASS in testbench.alu_oper_test
+Time = 620
+Test   62 PASS in testbench.alu_oper_test
+Time = 630
+Test   63 PASS in testbench.alu_oper_test
+Time = 640
+
+LTS Test's
+Test   64 PASS in testbench.alu_oper_test
+Time = 650
+Test   65 PASS in testbench.alu_oper_test
+Time = 660
+Test   66 PASS in testbench.alu_oper_test
+Time = 670
+Test   67 PASS in testbench.alu_oper_test
+Time = 680
+Test   68 PASS in testbench.alu_oper_test
+Time = 690
+Test   69 PASS in testbench.alu_oper_test
+Time = 700
+Test   70 PASS in testbench.alu_oper_test
+Time = 710
+Test   71 PASS in testbench.alu_oper_test
+Time = 720
+
+LTU Test's
+Test   72 PASS in testbench.alu_oper_test
+Time = 730
+Test   73 PASS in testbench.alu_oper_test
+Time = 740
+Test   74 PASS in testbench.alu_oper_test
+Time = 750
+Test   75 PASS in testbench.alu_oper_test
+Time = 760
+Test   76 PASS in testbench.alu_oper_test
+Time = 770
+Test   77 PASS in testbench.alu_oper_test
+Time = 780
+Test   78 PASS in testbench.alu_oper_test
+Time = 790
+Test   79 PASS in testbench.alu_oper_test
+Time = 800
+
+GES Test's
+Test   80 PASS in testbench.alu_oper_test
+Time = 810
+Test   81 PASS in testbench.alu_oper_test
+Time = 820
+Test   82 PASS in testbench.alu_oper_test
+Time = 830
+Test   83 PASS in testbench.alu_oper_test
+Time = 840
+Test   84 PASS in testbench.alu_oper_test
+Time = 850
+Test   85 PASS in testbench.alu_oper_test
+Time = 860
+Test   86 PASS in testbench.alu_oper_test
+Time = 870
+Test   87 PASS in testbench.alu_oper_test
+Time = 880
+
+GEU Test's
+Test   88 PASS in testbench.alu_oper_test
+Time = 890
+Test   89 PASS in testbench.alu_oper_test
+Time = 900
+Test   90 PASS in testbench.alu_oper_test
+Time = 910
+Test   91 PASS in testbench.alu_oper_test
+Time = 920
+Test   92 PASS in testbench.alu_oper_test
+Time = 930
+Test   93 PASS in testbench.alu_oper_test
+Time = 940
+Test   94 PASS in testbench.alu_oper_test
+Time = 950
+Test   95 PASS in testbench.alu_oper_test
+Time = 960
+
+EQ Test's
+Test   96 PASS in testbench.alu_oper_test
+Time = 970
+Test   97 PASS in testbench.alu_oper_test
+Time = 980
+Test   98 PASS in testbench.alu_oper_test
+Time = 990
+Test   99 PASS in testbench.alu_oper_test
+Time = 1000

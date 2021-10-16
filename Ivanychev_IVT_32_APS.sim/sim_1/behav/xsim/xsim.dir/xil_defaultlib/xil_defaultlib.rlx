@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/miriscv_tb.v,1634284307,verilog,,,,miriscv_tb,,,,,,,,
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/tb_alu.v,1633333667,verilog,,,,tb_alu,,,,,,,,
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v,1633343654,verilog,,F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v,,miriscv,,,,,,,,
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v,1633292579,verilog,,F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v,,miriscv_alu,,,,,,,,
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v,1633338004,verilog,,F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v,,miriscv_instruction_memory,,,,,,,,
+F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v,1633339915,verilog,,F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/miriscv_tb.v,,miriscv_register_file,,,,,,,,
