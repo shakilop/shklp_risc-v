@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1'
+HD_PWD='F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

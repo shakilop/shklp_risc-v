@@ -2,48 +2,72 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Oct  3 15:19:21 2021
-# Process ID: 11576
-# Current directory: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9752 F:\Семестр 5\АПС\Ivanychev_IVT_32_APS\Ivanychev_IVT_32_APS.xpr
-# Log file: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/vivado.log
-# Journal file: F:/Семестр 5/АПС/Ivanychev_IVT_32_APS\vivado.jou
+# Start of session at: Mon Oct 18 12:50:15 2021
+# Process ID: 9644
+# Current directory: F:/8190938/Ivanychev_IVT_32_APS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9328 F:\8190938\Ivanychev_IVT_32_APS\Ivanychev_IVT_32_APS.xpr
+# Log file: F:/8190938/Ivanychev_IVT_32_APS/vivado.log
+# Journal file: F:/8190938/Ivanychev_IVT_32_APS\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr}
+open_project F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr
 update_compile_order -fileset sources_1
-close [ open {F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v} w ]
-add_files {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v}}
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg
+source tb_miriscv_decode_obf.tcl
+run all
+run all
+run 10 us
+save_wave_config {F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg
+source tb_miriscv_decode_obf.tcl
+run 10 us
 update_compile_order -fileset sources_1
-add_files -norecurse {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/DE1_pin_assignments.csv}}
-export_ip_user_files -of_objects  [get_files {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/DE1_pin_assignments.csv}}] -no_script -reset -force -quiet
-remove_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/DE1_pin_assignments.csv}}
+run 1000 us
+update_compile_order -fileset sources_1
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+restart
+run all
+restart
+run all
+restart
+run all
+save_wave_config {F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg
+source tb_miriscv_decode_obf.tcl
+run 1000 us
+launch_simulation -mode post-synthesis -type functional
+close_sim
+launch_simulation
+open_wave_config F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg
+source tb_miriscv_decode_obf.tcl
+run 1000 us
+save_wave_config {F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/8190938/Ivanychev_IVT_32_APS/miriscv_tb_behav.wcfg
+source tb_miriscv_decode_obf.tcl
+run 1000 us
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-set_property is_enabled false [get_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v}}]
-set_property is_enabled false [get_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_instruction_memory.v}}]
-set_property is_enabled false [get_files  {{F:/Семестр 5/АПС/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v}}]
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-create_project project_1 {F:/ 5/miriscv_v2/project_1} -part xc7a100tcsg324-1
-add_files -norecurse {{F:/Семестр 5/АПС/miriscv_v2/miriscv_register_file.v} {F:/Семестр 5/АПС/miriscv_v2/miriscv.v} {F:/Семестр 5/АПС/miriscv_v2/miriscv_instruction_memory.v} {F:/Семестр 5/АПС/miriscv_v2/miriscv_alu.v}}
+close_sim
+launch_simulation
+close_project
+open_project F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.xpr
+launch_simulation
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-file mkdir F:/ 5/miriscv_v2/project_1/project_1.srcs/constrs_1
-create_bd_design "design_1"
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files {{F:/ 5/miriscv_v2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -reset -force -quiet
-remove_files  {{F:/ 5/miriscv_v2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}}
-synth_design -rtl -name rtl_1

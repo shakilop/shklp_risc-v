@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module miriscv_alu
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/tb_alu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/tmp/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

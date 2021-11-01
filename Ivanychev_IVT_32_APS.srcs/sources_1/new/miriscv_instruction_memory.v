@@ -1,6 +1,5 @@
 module miriscv_instruction_memory (
-    input clk,
-    input [4:0] adr,
+    input [31:0] adr,
     output [31:0] rd    
 );
 

@@ -1,18 +1,14 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6f435d178d094d7eaddb90b200b473d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot miriscv_tb_behav xil_defaultlib.miriscv_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6f435d178d094d7eaddb90b200b473d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_miriscv_decode_obf_behav xil_defaultlib.tb_miriscv_decode_obf xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'adr' [F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv.v:28]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4099] "F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_decode.v" Line 3. Module miriscv_decode doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.miriscv_instruction_memory
-Compiling module xil_defaultlib.miriscv_register_file
-Compiling module xil_defaultlib.miriscv_alu
-Compiling module xil_defaultlib.miriscv
-Compiling module xil_defaultlib.miriscv_tb
+Compiling module xil_defaultlib.miriscv_decode
+Compiling module xil_defaultlib.tb_miriscv_decode_obf
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot miriscv_tb_behav
+Built simulation snapshot tb_miriscv_decode_obf_behav

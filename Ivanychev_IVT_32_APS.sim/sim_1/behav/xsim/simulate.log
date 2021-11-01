@@ -1,2 +1,4 @@
 Vivado Simulator 2019.1
 Time resolution is 1 ps
+SUCCESS!
+$finish called at time : 12800 ns : File "F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/tb_miriscv_decode_obf.v" Line 239

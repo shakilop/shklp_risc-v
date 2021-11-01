@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Oct  4 11:52:57 2021
-# Process ID: 12716
-# Current directory: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1
+# Start of session at: Mon Oct 18 13:35:00 2021
+# Process ID: 2808
+# Current directory: F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1
 # Command line: vivado.exe -log miriscv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source miriscv.tcl
-# Log file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/miriscv.vds
-# Journal file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1\vivado.jou
+# Log file: F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/miriscv.vds
+# Journal file: F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source miriscv.tcl -notrace
