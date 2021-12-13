@@ -1,4 +1,2 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_decode.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module miriscv_decode
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/tb_miriscv_decode_obf.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_miriscv_decode_obf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sim_1/new/tb_miriscv_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_miriscv_top

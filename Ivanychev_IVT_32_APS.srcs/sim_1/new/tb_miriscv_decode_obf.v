@@ -46,7 +46,7 @@ module tb_miriscv_decode_obf();
     .illegal_instr_o  (csnq2B5NmhvC),
     .branch_o         (jvDyPB05y2kN),
     .jal_o            (wbQJKK6nVBgz),
-    .jarl_o           (Hgv30r1ZvMeP)
+    .jalr_o           (Hgv30r1ZvMeP)
   );
 
   wire [1:0] llOr;
@@ -125,8 +125,11 @@ module tb_miriscv_decode_obf();
     casez (U8wR)
       5'b0?000,
       5'b110?1,
-      5'b00101:
+      5'b00101: begin
         kQPPGtSqrrg0 = {1'b0, llOr} << 3;
+        if (U8wR[4] & ~U8wR[1] & |amn5)
+          sD7vxFgtY7jG = 1'b1;
+      end
 
       `OP_IMM_OPCODE: begin
         casez ({avHQ, amn5})
@@ -266,7 +269,7 @@ module tb_miriscv_decode_obf();
       if (i9Xe5cLse(wbQJKK6nVBgz, dw4BF7GiQnff))
         $display ("Output 'jal_o' is incorrect, instruction: %x, time: %t", UmWx5ulXQ5IP, $time);
       if (i9Xe5cLse(Hgv30r1ZvMeP, s4fORqHpkpve))
-        $display ("Output 'jarl_o' is incorrect, instruction: %x, time: %t", UmWx5ulXQ5IP, $time);
+        $display ("Output 'jalr_o' is incorrect, instruction: %x, time: %t", UmWx5ulXQ5IP, $time);
     end
 
     if ((I2r97V7muunE != `OP_A_RS1) &

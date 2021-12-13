@@ -2,19 +2,21 @@
 
 module miriscv_decode
 (
-    input  [31:0] fetched_instr_i,          //Op
-    output [1:0] ex_op_a_sel_o,             //srcA  
-    output [2:0] ex_op_b_sel_o,             //srcB
-    output [`ALU_OP_WIDTH-1:0] alu_op_o,    //aop
-    output mem_req_o,                       //memi
-    output mem_we_o,                        //mwe
-    output [2:0] mem_size_o,                //memi
-    output gpr_we_a_o,                      //rfwe
-    output wb_src_sel_o,                    //ws
-    output illegal_instr_o,                 //не отмечен
-    output branch_o,                        //b
-    output jal_o,                           //jal
-    output jarl_o                           //jalr
+    input  [31:0]               fetched_instr_i,            //Op
+    input                       stall_i,
+    output [1:0]                ex_op_a_sel_o,              //srcA  
+    output [2:0]                ex_op_b_sel_o,              //srcB
+    output [`ALU_OP_WIDTH-1:0]  alu_op_o,                   //aop
+    output                      mem_req_o,                  //memi
+    output                      mem_we_o,                   //mwe
+    output [2:0]                mem_size_o,                 //memi
+    output                      gpr_we_a_o,                 //rfwe
+    output                      wb_src_sel_o,               //ws
+    output                      illegal_instr_o,            //не отмечен
+    output                      branch_o,                   //b
+    output                      jal_o,                      //jal
+    output                      jalr_o,                     //jalr
+    output                      enpc_o
 );
 
 reg [1:0] ex_op_a_sel;
@@ -41,7 +43,8 @@ assign wb_src_sel_o = wb_src_sel;
 assign illegal_instr_o = illegal_instr;
 assign branch_o = branch;
 assign jal_o = jal;
-assign jarl_o = jarl;
+assign jalr_o = jarl;
+assign enpc_o = !stall_i;
 
 always @(*) begin
     if (fetched_instr_i[1:0]==2'b11) begin
@@ -346,19 +349,28 @@ always @(*) begin
             end
             
             `JALR_OPCODE: begin
-
-                    ex_op_a_sel <= `OP_A_CURR_PC;
-                    ex_op_b_sel <= `OP_B_INCR; 
-                    alu_op <= `ALU_ADD;                  
-                    mem_req <= 0;
-                    mem_we <= 0; //No matter
-                    mem_size <= 0; //No matter
-                    gpr_we_a <= 1;
-                    wb_src_sel <= `WB_EX_RESULT; 
-                    illegal_instr <= 0;
-                    branch <= 0;                  
-                    jal <= 0;
-                    jarl <= 1;
+                    if (fetched_instr_i[14:12]==0) begin
+                        ex_op_a_sel <= `OP_A_CURR_PC;
+                        ex_op_b_sel <= `OP_B_INCR; 
+                        alu_op <= `ALU_ADD;                  
+                        mem_req <= 0;
+                        mem_we <= 0; //No matter
+                        mem_size <= 0; //No matter
+                        gpr_we_a <= 1;
+                        wb_src_sel <= `WB_EX_RESULT; 
+                        illegal_instr <= 0;
+                        branch <= 0;                  
+                        jal <= 0;
+                        jarl <= 1;
+                    end
+                    else begin
+                        illegal_instr <= 1;
+                        mem_req <= 0;
+                        gpr_we_a <= 0;
+                        branch <= 0;                  
+                        jal <= 0;
+                        jarl <= 0;
+                    end
                 
             end
             
