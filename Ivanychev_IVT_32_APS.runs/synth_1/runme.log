@@ -843,3 +843,17 @@ Resolution: This message can indicate that there are no constraints for the desi
 INFO: [Common 17-1381] The checkpoint 'F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/miriscv.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file miriscv_utilization_synth.rpt -pb miriscv_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Mon Oct 18 13:36:26 2021...
+
+*** Running vivado
+    with args -log miriscv_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source miriscv_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/Shakilop/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source miriscv_top.tcl -notrace
+ERROR: [Common 17-275] File does not exist [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc]
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 24 11:08:04 2021...

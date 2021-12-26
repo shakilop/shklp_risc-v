@@ -9,4 +9,7 @@
 # Log file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/miriscv_top.vds
 # Journal file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/Shakilop/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source miriscv_top.tcl -notrace
+ERROR: [Common 17-275] File does not exist [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc]
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 24 11:08:04 2021...

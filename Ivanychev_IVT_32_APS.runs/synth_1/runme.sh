@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/8190938/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1'
+HD_PWD='F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log miriscv.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source miriscv.tcl
+EAStep vivado -log miriscv_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source miriscv_top.tcl
