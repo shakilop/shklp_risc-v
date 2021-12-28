@@ -61,3 +61,9 @@
 // writeback source selection
 `define WB_EX_RESULT     1'b0
 `define WB_LSU_DATA      1'b1
+
+//next PC selection
+`define PC_MTVEC         2'b11
+`define PC_MEPC          2'b10
+`define PC_JALR          2'b01
+`define PC_INC           2'b00

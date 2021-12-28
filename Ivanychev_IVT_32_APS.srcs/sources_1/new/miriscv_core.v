@@ -30,7 +30,14 @@ module miriscv_core(
     output          data_we_o,
     output [3:0]    data_be_o,
     output [31:0]   data_addr_o,
-    output [31:0]   data_wdata_o
+    output [31:0]   data_wdata_o,
+    
+    //interruption interface
+    input           int_i,
+    input [31:0]    mcause_i,
+    output          int_rst_o,
+    output [31:0]   mie_o
+    
 );
 //Decoder wires
 wire       dec_stall;
@@ -42,18 +49,31 @@ wire [`ALU_OP_WIDTH-1:0] dec_aop;
 wire [1:0] dec_srcA;
 wire [2:0] dec_srcB;
 wire       dec_register_file_we;
-wire       dec_jalr;
+wire [1:0] dec_jalr;
 wire       dec_enpc;
 wire       dec_jal;
 wire       dec_b;
 wire       dec_illegal_instr;
-          
+wire       dec_csr;
+wire [2:0] dec_csrop;
+wire       dec_int_rst;    
+wire       dec_int;
 //Reg_file wires          
 wire [31:0] register_file_RD1;
 wire [31:0] register_file_RD2;
 reg  [31:0] register_file_WD3;
 wire        register_file_we;
 
+//CSR wires
+wire [31:0] csr_mie;
+wire [31:0] csr_mtvec;
+wire [31:0] csr_mepc;
+wire [31:0] csr_rd;
+wire [31:0] csr_wd;
+wire [11:0] csr_a;
+wire [2:0] csr_op;
+wire [31:0] csr_pc;
+wire [31:0] csr_mcause;
 //Instruction wire
 wire [31:0] instr;
 
@@ -98,6 +118,27 @@ assign lsu_size = dec_mems;
 assign lsu_data_i = register_file_RD2;
 assign lsu_req = dec_memr;
 assign dec_stall = lsu_stall;
+assign csr_a = instr[31:20];
+assign csr_wd = register_file_RD1;
+assign csr_op = dec_csrop;
+assign csr_mcause = mcause_i;
+assign csr_pc = PC;
+assign mie_o = csr_mie;
+assign int_rst_o = dec_int_rst;
+assign dec_int = int_i;
+
+
+miriscv_csr control_status_registers (  .clk_i(clk_i),
+                                        .A_i(csr_a),
+                                        .WD_i(csr_wd),
+                                        .OP_i(csr_op),
+                                        .mcause_i(csr_mcause),
+                                        .PC_i(csr_pc),
+                                        .mie_o(csr_mie),
+                                        .mtvec_o(csr_mtvec),
+                                        .mepc_o(csr_mepc),
+                                        .RD_o(csr_rd)
+);
 
 miriscv_register_file register_file_inst (.clk(clk_i),
                                           .rst(arstn_i),
@@ -117,6 +158,7 @@ miriscv_alu alu_inst (.operator_i(alu_operator),
                       
                                                           
 miriscv_decode decode_inst (.fetched_instr_i(instr),
+                            .int_i(dec_int),
                             .stall_i(dec_stall),
                             .ex_op_a_sel_o(dec_srcA),
                             .ex_op_b_sel_o(dec_srcB),
@@ -130,7 +172,10 @@ miriscv_decode decode_inst (.fetched_instr_i(instr),
                             .branch_o(dec_b),
                             .jal_o(dec_jal),
                             .jalr_o(dec_jalr),
-                            .enpc_o(dec_enpc));
+                            .enpc_o(dec_enpc),
+                            .csr_o(dec_csr),
+                            .csrop_o(dec_csrop),
+                            .int_rst_o(dec_int_rst));
                             
 miriscv_lsu lsu_inst(.clk_i(clk_i),
             .arstn_i(arstn_i),
@@ -154,9 +199,11 @@ always @(posedge clk_i) begin
         PC <= 0;
     end
     if (dec_enpc)   
-        case (dec_jalr)       
-            1'd1: PC = register_file_RD1;
-            1'd0: 
+        case (dec_jalr)
+            2'd3: PC <= csr_mtvec;
+            2'd2: PC <= csr_mepc;       
+            2'd1: PC <= register_file_RD1;
+            2'd0: 
                 case ((alu_comp&&dec_b)|dec_jal)
                     1'd0: PC <= PC + 4;
                     1'd1:
@@ -181,9 +228,13 @@ always @(*) begin
         `OP_B_IMM_S:   alu_operand_b <= imm_S;
         `OP_B_INCR:    alu_operand_b <= 4;
     endcase
-    case (dec_ws)
-        `WB_EX_RESULT: register_file_WD3 <= alu_res;
-        `WB_LSU_DATA:  register_file_WD3 <= lsu_data_o;
+    case (dec_csr)
+        1'b1:register_file_WD3 <= csr_rd;
+        1'b0:
+            case (dec_ws)
+                `WB_EX_RESULT: register_file_WD3 <= alu_res;
+                `WB_LSU_DATA:  register_file_WD3 <= lsu_data_o;
+            endcase
     endcase
 end
 

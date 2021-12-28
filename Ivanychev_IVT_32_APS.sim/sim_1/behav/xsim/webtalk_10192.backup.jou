@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Dec 14 00:42:46 2021
-# Process ID: 5036
+# Start of session at: Mon Dec 27 04:59:28 2021
+# Process ID: 10192
 # Current directory: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/xsim.dir/tb_miriscv_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/xsim.dir/tb_miriscv_interrupt_contr_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/xsim.dir/tb_miriscv_top_behav/webtalk/xsim_webtalk.tcl -notrace
+source F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.sim/sim_1/behav/xsim/xsim.dir/tb_miriscv_interrupt_contr_behav/webtalk/xsim_webtalk.tcl -notrace

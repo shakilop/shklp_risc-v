@@ -4,4 +4,27 @@ Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6f435d178d
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_top.sv" Line 1. Module miriscv_top(RAM_SIZE=2048,RAM_INIT_FILE="program.txt") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_interrupt_contr.v" Line 1. Module miriscv_interrupt_contr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_core.v" Line 19. Module miriscv_core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscb_csr.v" Line 1. Module miriscv_csr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_register_file.v" Line 1. Module miriscv_register_file doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_alu.v" Line 5. Module miriscv_alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_decode.v" Line 3. Module miriscv_decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_lsu.v" Line 3. Module miriscv_lsu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.srcs/sources_1/new/miriscv_ram.sv" Line 1. Module miriscv_ram(RAM_SIZE=2048,RAM_INIT_FILE="program.txt") doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.miriscv_interrupt_contr
+Compiling module xil_defaultlib.miriscv_csr
+Compiling module xil_defaultlib.miriscv_register_file
+Compiling module xil_defaultlib.miriscv_alu
+Compiling module xil_defaultlib.miriscv_decode
+Compiling module xil_defaultlib.miriscv_lsu
+Compiling module xil_defaultlib.miriscv_core
+Compiling module xil_defaultlib.miriscv_ram(RAM_SIZE=2048,RAM_IN...
+Compiling module xil_defaultlib.miriscv_top(RAM_SIZE=2048,RAM_IN...
+Compiling module xil_defaultlib.tb_miriscv_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_miriscv_top_behav
