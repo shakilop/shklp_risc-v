@@ -1,3 +1,4 @@
+`define INT_COUNT 1
 module miriscv_interrupt_contr(
     input           clk_i,
     input           rst_i,
@@ -20,7 +21,7 @@ assign int_fin_o = (mie_i&int_req_i)&{31{INT_RST_i}}&dec;
 assign en = ((mie_i & int_req_i) & dec)!=0 ? 1 : 0;
 assign INT_o = (INT_reg || en)&&(!(INT_reg && en));
 
- 
+
 always @(*) begin
     if (INT_RST_i) begin
         INT_reg <= 0;
@@ -41,12 +42,19 @@ always @(posedge clk_i) begin
         if (!en) begin            
             counter <= counter + 1;
             case (dec)
-                32'h80000000: dec <= 1;
-                default: dec <= dec << 1;
+                32'h80000000: begin 
+                    dec <= 1;
+                    
+                end
+                default: begin 
+                    dec <= dec << 1;
+                    
+                end
             endcase
             
         end
     end
 end
+
 
 endmodule

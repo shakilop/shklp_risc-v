@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Dec 24 11:07:53 2021
-# Process ID: 8832
+# Start of session at: Wed Dec 29 04:08:26 2021
+# Process ID: 3020
 # Current directory: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1
 # Command line: vivado.exe -log miriscv_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source miriscv_top.tcl
 # Log file: F:/Ivanychev_IVT_32_APS/Ivanychev_IVT_32_APS.runs/synth_1/miriscv_top.vds
@@ -11,5 +11,6 @@
 #-----------------------------------------------------------
 Sourcing tcl script 'C:/Users/Shakilop/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source miriscv_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 354.809 ; gain = 64.902
 ERROR: [Common 17-275] File does not exist [C:/Users/Shakilop/Desktop/Nexys-A7-100T-Master.xdc]
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 24 11:08:04 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 29 04:08:42 2021...
